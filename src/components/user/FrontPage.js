@@ -98,7 +98,7 @@ export function FrontPage(){
                                 <article>
                                     <h2>Mikä on Uriel Tekoäly Chat</h2>
                                     <p>
-                                        Tervetuloa tutustumaan <a href={getLinkBasedOnDevice()} target='_blank'>Uriel Tekoälyyn</a>, suomalaisiin tarpeisiin räätälöityyn älykkääseen tekoäly-chat palveluun.
+                                        Tervetuloa tutustumaan <a href={getLinkBasedOnDevice()} rel='noreferrer' target='_blank'>Uriel Tekoälyyn</a>, suomalaisiin tarpeisiin räätälöityyn älykkääseen tekoäly-chat palveluun.
                                         <br/>Uriel on uusimpaan tekoälyteknologiaan perustuva tekoälypalvelu, joka kykenee antamaan tekstin kautta esimerkiksi ohjeita, suosituksia, kirjoituksia, reseptejä, ja paljon muuta!
                                         <br/>Voit ajatella Urielia henkilökohtaisena assistenttinasi, joka on aina saatavilla puhelimessasi sovelluksemme kautta.
                                     </p>
