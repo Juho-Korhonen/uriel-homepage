@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { FrontPage } from './components/user/FrontPage';
+import { TermsOfService } from './components/user/TermsOfService';
+import { PrivacyPolicy } from './components/user/PrivacyPolicy';
+import { ContactPage } from './components/user/ContactPage';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import { NoPage } from './components/user/404Page';
+import ReactGA from 'react-ga';
 
 function App() {
+  const TRACKING_ID = "G-NGEWW65RHE"
+  ReactGA.initialize(TRACKING_ID)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter basename={"/"}>
+      <Routes>
+        <Route path="/etusivu" element={<FrontPage />} />
+        <Route path="/yhteydenotto" element={<ContactPage />} />
+        <Route path="/kayttoehdot" element={<TermsOfService />} />
+        <Route path="/tietosuoja" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NoPage/>}/>
+      </Routes>
+    </HashRouter>
   );
 }
 
