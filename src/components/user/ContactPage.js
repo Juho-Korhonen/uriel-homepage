@@ -26,7 +26,7 @@ export function ContactPage(){
                 <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin"></meta>
                 <meta name="keywords" content="uriel, tekoäly, yhteydenotto"></meta>
                 <meta name="robots" content="index, follow"></meta>
-                <title>Uriel - Ota Yhteyttä</title>
+                <title>Uriel Tekoäly Chat - Ota Yhteyttä</title>
             </Helmet>
             <div>
                 <header>
@@ -47,7 +47,7 @@ export function ContactPage(){
                 <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin"></meta>
                 <meta name="keywords" content="uriel, tekoäly, yhteydenotto"></meta>
                 <meta name="robots" content="index, follow"></meta>
-                <title>Uriel - Ota Yhteyttä</title>
+                <title>Uriel Tekoäly Chat - Ota Yhteyttä</title>
             </Helmet>
             <div style={{flexDirection: 'column', flex: 1}}>
                 <header style={{width: '100%' }}>

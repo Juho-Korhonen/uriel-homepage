@@ -103,7 +103,7 @@ export function TermsOfService(){
                 <meta name="description" content="uriel Tekoäly Chatin käyttöehdot"></meta>
                 <meta name="keywords" content="tekoäly, uriel, käyttöehdot"></meta>
                 <meta name="robots" content="index, follow"></meta>
-                <title>Uriel - Käyttöehdot</title>
+                <title>Uriel Tekoäly Chat - Käyttöehdot</title>
             </Helmet>
             <div>
                 <header>
@@ -122,7 +122,7 @@ export function TermsOfService(){
                 <meta name="description" content="uriel Tekoäly Chatin käyttöehdot"></meta>
                 <meta name="keywords" content="tekoäly, uriel, käyttöehdot"></meta>
                 <meta name="robots" content="noindex, nofollow"></meta>
-                <title>Uriel - Käyttöehdot</title>
+                <title>Uriel Tekoäly Chat - Käyttöehdot</title>
             </Helmet>
             <div style={{flexDirection: 'column'}}>
                 <header style={{width: '100%'}}>
