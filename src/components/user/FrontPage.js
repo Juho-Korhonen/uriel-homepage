@@ -113,7 +113,6 @@ export function FrontPage(){
                                         <br/>Oletko kuullut tarpeeksi? Hyppää mukaan tuhansien tyytyväisten suomalaisten joukkoon ja säästä aikaa, rahaa ja vaivaa käyttämällä Uriel Tekoäly Chattia!
                                     </p>
                                     <button onClick={handleButtonClick}>Lataa täysin ilmainen sovellus nyt!</button>
-
                                 </article>
                             </main>
                     </div>
@@ -147,26 +146,26 @@ export function FrontPage(){
                     </h1>
 
                     <main style={{textAlign: 'center'}}>
-                        <article>
-                            <h2>Mikä on Uriel Tekoäly Chat</h2>
-                            <p>
-                                Tervetuloa tutustumaan Uriel Tekoälyyn, suomalaisiin tarpeisiin räätälöityyn älykkääseen tekoäly-chat palveluun.
-                                <br/>Uriel on uusimpaan tekoälyteknologiaan perustuva tekoälypalvelu, joka kykenee antamaan tekstin kautta esimerkiksi ohjeita, suosituksia, kirjoituksia, reseptejä, ja paljon muuta!
-                                <br/>Voit ajatella Urielia henkilökohtaisena assistenttinasi, joka on aina saatavilla puhelimessasi sovelluksemme kautta.
-                            </p>
-                        </article>
+                    <article>
+                        <h2>Mikä on Uriel Tekoäly Chat</h2>
+                        <p>
+                            Tervetuloa tutustumaan <a href={getLinkBasedOnDevice()} style={{color: '#3944FF'}} rel='noreferrer' target='_blank'>Uriel Tekoälyyn</a>, suomalaisiin tarpeisiin räätälöityyn älykkääseen tekoäly-chat palveluun.
+                            <br/>Uriel Tekoäly on uusimpaan tekoälyteknologiaan perustuva tekoälypalvelu, joka kykenee antamaan tekstin kautta esimerkiksi ohjeita, suosituksia, kirjoituksia, reseptejä, ja paljon muuta!
+                            <br/>Voit ajatella Uriel Tekoälyä henkilökohtaisena assistenttinasi, joka on aina saatavilla puhelimessasi sovelluksemme kautta.
+                            <br/>Uriel Tekoäly Chatin käyttöliittymässä on panostettu helppokäyttöisyyteen ja intuitiivisuuteen, joten sen käyttö alkaa sujumaan nopeasti.
+                        </p>
+                    </article>
 
-                        <article style={{paddingTop: 50}}>
-                            <h2>Miksi Uriel Tekoäly on tehty, ja miten se voi auttaa sinua?</h2>
-                            <p>
-                                Uriel Tekoäly Chat on työkalu, joka on luotu auttamaan suomalaisia jokapäiväisissä tehtävissä kuten sopivien ruokareseptien etsimisessä, pitkien viestien kirjoittamisessa, tiedonahaussa, kotitehtävien tekemisessä, ja lukemattomissa muissa asioissa!
-                                Voit kysyä tekoälyltä esimerksi sinun ruokavalioon, allergioihin, ja tottumuksiin räätälöidyt ruoanlaittoohjeet. Tekoäly vastaa hetkessä, ja kirjoittaa halutessasi erilaisen vastauksen.
-                                <br/>Tekoälyn hyödyt ovat lukemattomat, voit säästää aikaa, rahaa ja vaivaa käyttämällä moderneja tekoälypalveluita kuten Uriel Tekoälyä.
-                                Uriel tekoäly on räätälöity suomalaiselle käyttäjälle, ja sen käyttöliittymä on hyvin helppokäyttöinen ja intuitiivinen.
-                                <br/>Oletko kuullut tarpeeksi? Hyppää mukaan tuhansien tyytyväisten suomalaisten joukkoon ja säästä aikaa, rahaa ja vaivaa käyttämällä Uriel Tekoäly Chattia!
-                            </p>
-                            <button onClick={handleButtonClick}>Lataa täysin ilmainen sovellus nyt!</button>
-                        </article>
+                    <article>
+                        <h2>Miksi Uriel Tekoäly on tehty, ja miten se voi auttaa sinua?</h2>
+                        <p>
+                            Uriel Tekoäly Chat on työkalu, joka on luotu auttamaan suomalaisia jokapäiväisissä tehtävissä kuten sopivien ruokareseptien etsimisessä, pitkien viestien kirjoittamisessa, tiedonahaussa, kotitehtävien tekemisessä, ja lukemattomissa muissa asioissa!
+                            Voit kysyä tekoälyltä esimerkiksi sinun ruokavalioon, allergioihin, ja tottumuksiin räätälöidyt ruoanlaittoohjeet. Tekoäly vastaa hetkessä, ja kirjoittaa halutessasi uuden muokatun vastauksen.
+                            <br/>Tekoälyn hyödyt ovat lukemattomat, voit säästää aikaa, rahaa ja vaivaa käyttämällä moderneja tekoälypalveluita kuten Uriel Tekoälyä.
+                            <br/>Oletko kuullut tarpeeksi? Hyppää mukaan tuhansien tyytyväisten suomalaisten joukkoon ja säästä aikaa, rahaa ja vaivaa käyttämällä Uriel Tekoäly Chattia!
+                        </p>
+                        <button onClick={handleButtonClick}>Lataa täysin ilmainen sovellus nyt!</button>
+                    </article>
                     </main>
                 </div>
                 </div>
