@@ -16,17 +16,17 @@ export function NoPage(){
     },[])
 
     return !mobile ? (
-        <div>
+        <main>
             <NavBar/>
             <h1 style={{marginInline: 20}}>Tässä osoitteessa ei ole mitään, haluatko siirtyä etusivulle?</h1>
-            <button style={{backgroundColor: '#3994FF', color:'white', marginInline: 30}} onClick={() => window.location.replace("https://urielai.com/#/etusivu")}><h3>Siirry takaisin etusivulle</h3></button>
-        </div>
+            <button style={{backgroundColor: '#3994FF', color:'white', marginInline: 30}} onClick={() => window.location.replace("https://urielai.com/etusivu")}>Siirry takaisin etusivulle</button>
+        </main>
     ):
     (
-        <div  style={{position: 'absolute', top: 0, alignItems: 'center', textAlign: 'center'}}>
+        <main  style={{position: 'absolute', top: 0, alignItems: 'center', textAlign: 'center'}}>
             <NavBar/>
             <h1>Tässä osoitteessa ei ole mitään, haluatko siirtyä etusivulle?</h1>
-            <button style={{backgroundColor: '#3994FF', color:'white'}} onClick={() => window.location.replace("https://urielai.com/#/etusivu")}><h3>Siirry takaisin etusivulle</h3></button>
-        </div>
+            <button style={{backgroundColor: '#3994FF', color:'white'}} onClick={() => window.location.replace("https://urielai.com/etusivu")}>Siirry takaisin etusivulle</button>
+        </main>
     )
 }

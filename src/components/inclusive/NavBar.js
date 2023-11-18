@@ -48,10 +48,10 @@ export default function NavBar(){
                 flexDirection: 'row', 
                 alignItems: 'center',
             }}>
-                <ul><a style={styles.listItem} href="/#/etusivu">Etusivu</a></ul>
-                <ul><a style={styles.listItem} href="/#/kayttoehdot">Käyttöehdot</a></ul>
-                <ul><a style={styles.listItem} href="/#/tietosuoja">Yksityisyys</a></ul>
-                <ul><a style={styles.listItem} href="/#/yhteydenotto">Ota yhteyttä</a></ul>
+                <ul><a style={styles.listItem} href="/etusivu">Etusivu</a></ul>
+                <ul><a style={styles.listItem} href="/kayttoehdot">Käyttöehdot</a></ul>
+                <ul><a style={styles.listItem} href="/tietosuoja">Yksityisyys</a></ul>
+                <ul><a style={styles.listItem} href="/yhteydenotto">Ota yhteyttä</a></ul>
             </li>
         </header>
     ): (
@@ -74,22 +74,22 @@ export default function NavBar(){
             }}
           >
             <li style={styles.mobileListItem}>
-              <a href="/#/etusivu">
+              <a href="/etusivu">
                 Etusivu
               </a>
             </li>
             <li style={styles.mobileListItem}>
-              <a href="/#/kayttoehdot">
+              <a href="/kayttoehdot">
                 Käyttöehdot
               </a>
             </li>
             <li style={styles.mobileListItem}>
-              <a href="/#/tietosuoja">
+              <a href="/tietosuoja">
                 Yksityisyys
               </a>
             </li>
             <li style={styles.mobileListItem}>
-              <a href="/#/yhteydenotto">
+              <a href="/yhteydenotto">
                 Ota yhteyttä
               </a>
             </li>
@@ -100,7 +100,7 @@ export default function NavBar(){
     
     const styles = {
       listItem: {
-        color: 'white',
+        color: "white",
         textDecoration: 'none',
         fontSize: 28,
       },

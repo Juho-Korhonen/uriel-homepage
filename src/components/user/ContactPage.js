@@ -1,18 +1,16 @@
 import NavBar from "../inclusive/NavBar"
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { useState, useEffect } from "react";
-
+import { Helmet } from "react-helmet-async";
 export function ContactPage(){
-    document.title = "Uriel - Ota yhteyttä"
     const [mobile, setMobile] = useState(window.innerWidth <= 500);
     const handleWindowSizeChange = () => {
         setMobile(window.innerWidth <= 500);
     }
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname)
-        ReactGA.event({
-            category: 'pageOpened',
-            action: 'contact page opened',
+        ReactGA.send({
+            hitType: 'pageview',
+            page: window.location.pathname
         })
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
@@ -22,14 +20,15 @@ export function ContactPage(){
 
 
     return !mobile ? (
-        <html>
-            <head>
+        <div>
+            <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                 <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin"></meta>
                 <meta name="keywords" content="uriel, tekoäly, yhteydenotto"></meta>
                 <meta name="robots" content="index, follow"></meta>
-            </head>
-            <body>
+                <title>Uriel - Ota Yhteyttä</title>
+            </Helmet>
+            <div>
                 <header>
                     <NavBar/>
                 </header>
@@ -38,27 +37,28 @@ export function ContactPage(){
                     <p>Voit ottaa meihin vapaasti yhteyttä antaaksesi palautetta, raportoidaksesi bugeja, tai kysyäksesi muista Uriel Tekoäly Chattiin liittyvistä asioista.</p>
                     <p>Email: yhteydenotto@urielai.com</p>
                 </main>
-            </body>
-        </html>
+            </div>
+        </div>
     ):
     (
-        <html>
-            <head>
+        <div>
+            <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-                <meta name="description" content="Tutustu Uriel Tekoälyyn, suomalaisiin tarpeisiin suunniteltuun älykkääseen tekoäly-chat-palveluun. Saat ohjeita, suosituksia, reseptejä ja paljon muuta! Uriel on henkilökohtainen assistenttisi aina puhelimessasi. Lataa ilmainen sovellus ja säästä aikaa, rahaa ja vaivaa arjen askareissa."></meta>
-                <meta name="keywords" content="tekoäly, suomi, ai, uriel"></meta>
+                <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin"></meta>
+                <meta name="keywords" content="uriel, tekoäly, yhteydenotto"></meta>
                 <meta name="robots" content="index, follow"></meta>
-            </head>
-            <body style={{flexDirection: 'column', flex: 1}}>
+                <title>Uriel - Ota Yhteyttä</title>
+            </Helmet>
+            <div style={{flexDirection: 'column', flex: 1}}>
                 <header style={{width: '100%' }}>
                     <NavBar/>
                 </header>
-                <main style={{flex:1, padding: 50, alignSelf: 'flex-start'}}>
+                <main style={{flex:1, padding: 50, alignSelf: 'flex-start', marginBottom: 200}}>
                     <h1>Ota yhteyttä meihin</h1>
-                    <p>Voit ottaa meihin vapaasti yhteyttä antaaksesi palautetta, raportoidaksesi bugeja, tai kysyäksesi muista Uriel Tekoäly Chattiin liittyvistä asioista.</p>
+                    <p>Voit ottaa meihin vapaasti yhteyttä antaaksesi palautetta, raportoidaksesi bugeja, tai kysyäksesi muista Uriel Tekoäly Chattiin liittyvistä asioista. Etsimme myös yhteistyökumppaneita, jos yhteistyö kiinnostaa, ota vapaasti yhteyttä!</p>
                     <p>Email: yhteydenotto@urielai.com</p>
                 </main>
-            </body>
-        </html>
+            </div>
+        </div>
     )
 }

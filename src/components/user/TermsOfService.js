@@ -1,6 +1,7 @@
 import NavBar from "../inclusive/NavBar"
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 export function TermsOfService(){
@@ -63,7 +64,7 @@ export function TermsOfService(){
     
     Uriel Tekoäly Chat tarjotaan ilmaiseksi. Tietyt ominaisuudet voivat kuitenkin edellyttää kertaluonteista sovelluksen sisäistä ostoa tai tilausta.
     
-    Tarvittavat tiedot tilaussuunnitelmista toimitetaan rekisteröitymisen yhteydessä ennen ostoa. Operaattorilla on oikeus muuttaa, lopettaa tai muuttaa tarjottuja tilaussuunnitelmia milloin tahansa.
+    Tarvittavat tiedot tilaussuunnitelmista toimitetaan ennen ostoa. Operaattorilla on oikeus muuttaa, lopettaa tai muuttaa tarjottuja tilaussuunnitelmia milloin tahansa.
     
     Tilaukset, mukaan lukien ilmaisen kokeilujakson aloittavat tilaukset, uusitaan automaattisesti uudelle laskutuskaudelle, ja veloitus suoritetaan 24 tuntia ennen uuden laskutuskauden alkamista. Jos haluat peruuttaa tilauksesi, peruutus koskee seuraavaa laskutusjaksoa, ja olet vastuussa tilaustesi hallinnasta.
     
@@ -71,7 +72,7 @@ export function TermsOfService(){
     
     Viestinnän palveluntarjoajasi määräämät maksut, mukaan lukien dataroaming-maksut, ovat yksinomaan vastuullasi. Ennen näiden maksujen aiheuttamista varmista, että sinulla on lupa henkilöltä, joka vastaa matkapuhelimesi tai tablet-laitteesi laskuihin liittyvien maksujen maksamisesta.
     
-    Lue huolellisesti tietosuojakäytäntömme https://urielai.com/#/tietosuoja saadaksesi tietoa siitä, miten käsittelemme tietojasi.
+    Lue huolellisesti tietosuojakäytäntömme https://urielai.com/tietosuoja saadaksesi tietoa siitä, miten käsittelemme tietojasi.
     
     Uriel Tekoäly Chat tarjotaan "sellaisena kuin se on" ja "saatavilla olevana." Operaattori ei anna takuuta siitä, että pääsy sovellukseen tai sen toimintoihin olisi keskeytymätöntä tai virheetöntä.
     
@@ -84,10 +85,9 @@ export function TermsOfService(){
         setMobile(window.innerWidth <= 500);
     }
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname)
-        ReactGA.event({
-            category: 'pageOpened',
-            action: 'tos page opened',
+        ReactGA.send({
+            hitType: 'pageview',
+            page: window.location.pathname
         })
         window.addEventListener('resize', handleWindowSizeChange);
         return () => {
@@ -96,16 +96,16 @@ export function TermsOfService(){
     },[])
 
 
-    document.title = "Uriel - Käyttöehdot"
     return !mobile ? (
-        <html>
-            <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <div>
+            <Helmet>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                 <meta name="description" content="uriel Tekoäly Chatin käyttöehdot"></meta>
                 <meta name="keywords" content="tekoäly, uriel, käyttöehdot"></meta>
-                <meta name="robots" content="noindex, nofollow"></meta>
-            </head>
-            <body>
+                <meta name="robots" content="index, follow"></meta>
+                <title>Uriel - Käyttöehdot</title>
+            </Helmet>
+            <div>
                 <header>
                     <NavBar/>
                 </header>
@@ -113,17 +113,18 @@ export function TermsOfService(){
                     <h2>Käyttöehdot</h2>
                     <p>{TermsOfServiceText}</p>
                 </main>
-            </body>
-        </html>
+            </div>
+        </div>
     ):(
-        <html>
-            <head>
+        <div>
+            <Helmet>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-                <meta name="description" content="Tutustu Uriel Tekoälyyn, suomalaisiin tarpeisiin suunniteltuun älykkääseen tekoäly-chat-palveluun. Saat ohjeita, suosituksia, reseptejä ja paljon muuta! Uriel on henkilökohtainen assistenttisi aina puhelimessasi. Lataa ilmainen sovellus ja säästä aikaa, rahaa ja vaivaa arjen askareissa."></meta>
-                <meta name="keywords" content="tekoäly, suomi, ai, uriel"></meta>
+                <meta name="description" content="uriel Tekoäly Chatin käyttöehdot"></meta>
+                <meta name="keywords" content="tekoäly, uriel, käyttöehdot"></meta>
                 <meta name="robots" content="noindex, nofollow"></meta>
-            </head>
-            <body style={{flexDirection: 'column'}}>
+                <title>Uriel - Käyttöehdot</title>
+            </Helmet>
+            <div style={{flexDirection: 'column'}}>
                 <header style={{width: '100%'}}>
                     <NavBar/>
                 </header>
@@ -131,7 +132,7 @@ export function TermsOfService(){
                     <h2>Käyttöehdot</h2>
                     <p>{TermsOfServiceText}</p>
                 </main>
-            </body>
-        </html>
+            </div>
+        </div>
     )
 }
