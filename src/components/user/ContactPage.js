@@ -22,7 +22,7 @@ export function ContactPage(){
     return !mobile ? (
         <div>
             <Helmet prioritizeSeoTags>
-                <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin"></meta>
+                <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin, tai anna palautetta tms"></meta>
                 <meta name="keywords" content="uriel, tekoäly, yhteydenotto"></meta>
                 <meta name="robots" content="index, follow"></meta>
                 <title>Uriel Tekoäly Chat - Ota Yhteyttä</title>
@@ -42,7 +42,7 @@ export function ContactPage(){
     (
         <div>
             <Helmet prioritizeSeoTags>
-                <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin"></meta>
+                <meta name="description" content="Ota yhteyttä Uriel Tekoäly Chat kehittäjiin, tai anna palautetta tms"></meta>
                 <meta name="keywords" content="uriel, tekoäly, yhteydenotto"></meta>
                 <meta name="robots" content="index, follow"></meta>
                 <title>Uriel Tekoäly Chat - Ota Yhteyttä</title>
