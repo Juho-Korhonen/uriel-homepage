@@ -18,8 +18,7 @@ export function NoPage(){
 
     return !mobile ? (
         <main>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <Helmet prioritizeSeoTags>
                 <title>Uriel Tekoäly Chat - 404</title>
             </Helmet>
             <NavBar/>
@@ -29,8 +28,7 @@ export function NoPage(){
     ):
     (
         <main  style={{position: 'absolute', top: 0, alignItems: 'center', textAlign: 'center'}}>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <Helmet prioritizeSeoTags>
                 <title>Uriel Tekoäly Chat - 404</title>
             </Helmet>
             <NavBar/>

@@ -74,8 +74,7 @@ export function FrontPage(){
 
     return !mobile ? (
         <div>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <Helmet prioritizeSeoTags>
                 <meta name="description" content="Tutustu Uriel Tekoälyyn, suomalaisiin tarpeisiin suunniteltuun älykkääseen tekoäly-chat-palveluun. Saat ohjeita, suosituksia, reseptejä ja paljon muuta! Uriel on henkilökohtainen assistenttisi aina puhelimessasi. Lataa ilmainen sovellus ja säästä aikaa, rahaa ja vaivaa arjen askareissa."></meta>
                 <meta name="keywords" content="tekoäly, suomi, ai, uriel"></meta>
                 <meta name="robots" content="index, follow"></meta>
@@ -125,8 +124,7 @@ export function FrontPage(){
         </div>
     ):(
         <div>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <Helmet prioritizeSeoTags>
                 <meta name="description" content="Tutustu Uriel Tekoälyyn, suomalaisiin tarpeisiin suunniteltuun älykkääseen tekoäly-chat-palveluun. Saat ohjeita, suosituksia, reseptejä ja paljon muuta! Uriel on henkilökohtainen assistenttisi aina puhelimessasi. Lataa ilmainen sovellus ja säästä aikaa, rahaa ja vaivaa arjen askareissa."></meta>
                 <meta name="keywords" content="tekoäly, suomi, ai, uriel"></meta>
                 <meta name="robots" content="index, follow"></meta>
