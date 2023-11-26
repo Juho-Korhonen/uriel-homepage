@@ -86,9 +86,8 @@ export function PrivacyPolicy(){
 
     return !mobile ? (
         <div>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-                <meta name="description" content="uriel Tekoäly Chatin yksityisyyskäytäntö"></meta>
+            <Helmet prioritizeSeoTags>
+                <meta name="description" content="Uriel Tekoäly Chatin tietosuojakäyntö"></meta>
                 <meta name="keywords" content="tekoäly, uriel, yksityisyys, tietosuoja, tietosuojakäytäntö"></meta>
                 <meta name="robots" content="index, follow"></meta>
                 <title>Uriel Tekoäly Chat - Yksityisyys</title>
@@ -105,13 +104,11 @@ export function PrivacyPolicy(){
         </div>
     ):(
         <div>
-            <Helmet>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-                <meta name="description" content="Tutustu Uriel Tekoälyyn, suomalaisiin tarpeisiin suunniteltuun älykkääseen tekoäly-chat-palveluun. Saat ohjeita, suosituksia, reseptejä ja paljon muuta! Uriel on henkilökohtainen assistenttisi aina puhelimessasi. Lataa ilmainen sovellus ja säästä aikaa, rahaa ja vaivaa arjen askareissa."></meta>
-                <meta name="keywords" content="tekoäly, suomi, ai, uriel"></meta>
-                <meta name="robots" content="noindex, nofollow"></meta>
+            <Helmet prioritizeSeoTags>
+                <meta name="description" content="Uriel Tekoäly Chatin tietosuojakäyntö"></meta>
+                <meta name="keywords" content="tekoäly, uriel, yksityisyys, tietosuoja, tietosuojakäytäntö"></meta>
+                <meta name="robots" content="index, follow"></meta>
                 <title>Uriel Tekoäly Chat - Yksityisyys</title>
-
             </Helmet>
             <div style={{flexDirection: 'column'}}>
                 <header style={{width: '100%'}}>

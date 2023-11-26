@@ -99,7 +99,7 @@ export function TermsOfService(){
     return !mobile ? (
         <div>
             <Helmet prioritizeSeoTags>
-                <meta name="description" content="uriel Tekoäly Chatin käyttöehdot"></meta>
+                <meta name="description" content="Uriel Tekoäly Chatin käyttöehdot"></meta>
                 <meta name="keywords" content="tekoäly, uriel, käyttöehdot"></meta>
                 <meta name="robots" content="index, follow"></meta>
                 <title>Uriel Tekoäly Chat - Käyttöehdot</title>
@@ -117,7 +117,7 @@ export function TermsOfService(){
     ):(
         <div>
             <Helmet prioritizeSeoTags>
-                <meta name="description" content="uriel Tekoäly Chatin käyttöehdot"></meta>
+                <meta name="description" content="Uriel Tekoäly Chatin käyttöehdot"></meta>
                 <meta name="keywords" content="tekoäly, uriel, käyttöehdot"></meta>
                 <meta name="robots" content="noindex, nofollow"></meta>
                 <title>Uriel Tekoäly Chat - Käyttöehdot</title>
