@@ -3,9 +3,9 @@ import ReactGA from 'react-ga4';
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 export function ContactPage(){
-    const [mobile, setMobile] = useState(window.innerWidth <= 500);
+    const [mobile, setMobile] = useState(window.innerWidth <= 800);
     const handleWindowSizeChange = () => {
-        setMobile(window.innerWidth <= 500);
+        setMobile(window.innerWidth <= 800);
     }
     useEffect(() => {
         ReactGA.send({

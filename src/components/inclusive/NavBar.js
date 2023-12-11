@@ -1,5 +1,5 @@
 import urielLogo from '../../assets/Logo.svg'
-
+import { FaInstagram } from "react-icons/fa";
 import { useState, useEffect } from 'react';
 
 export default function NavBar(){  
@@ -7,10 +7,10 @@ export default function NavBar(){
     Primary: "#3994FF",
     White: '#fffff'
 }
-    const [mobile, setMobile] = useState(window.innerWidth <= 500);
+    const [mobile, setMobile] = useState(window.innerWidth <= 800);
 
     const handleWindowSizeChange = () => {
-    setMobile(window.innerWidth <= 500);
+    setMobile(window.innerWidth <= 800);
     }
 
     useEffect(() => {
@@ -22,38 +22,44 @@ export default function NavBar(){
     
 
     return !mobile ? (
-        <header style={{
-            backgroundColor: colors.Primary, 
-            width: '100%',
-            paddingLeft: '20px',
-            paddingRight: '20px',
-            height: 80,
-            flexDirection: 'row',
-            display: 'flex',
-            position: 'fixed',
-            top: 0,
-            left: 0
-        }}>
+<header style={{
+    backgroundColor: colors.Primary, 
+    width: '100%',
+    paddingLeft: '20px',
+    paddingRight: '20px',
+    height: 80,
+    flexDirection: 'row',
+    display: 'flex',
+    position: 'fixed',
+    top: 0,
+    left: 0
+}}>
 
-            <h2 style={{
-                fontSize: 50,
-                marginRight: 40,
-                alignSelf: 'center',
-                color: 'white'
-            }}>Uriel</h2>
-                        <img src={urielLogo} style={{width: 80 }} alt="Uriel tekoälyn logo" />
+    <h2 style={{
+        fontSize: 50,
+        marginRight: 40,
+        alignSelf: 'center',
+        color: 'white'
+    }}>Uriel</h2>
+    <img src={urielLogo} style={{width: 80 }} alt="Uriel tekoälyn logo" />
 
-            <li style={{
-                display: 'flex', 
-                flexDirection: 'row', 
-                alignItems: 'center',
-            }}>
-                <ul><a style={styles.listItem} href="/etusivu">Etusivu</a></ul>
-                <ul><a style={styles.listItem} href="/kayttoehdot">Käyttöehdot</a></ul>
-                <ul><a style={styles.listItem} href="/tietosuoja">Yksityisyys</a></ul>
-                <ul><a style={styles.listItem} href="/yhteydenotto">Ota yhteyttä</a></ul>
-            </li>
-        </header>
+    <li style={{
+        display: 'flex', 
+        flexDirection: 'row', 
+        alignItems: 'center',
+    }}>
+        <ul><a style={styles.listItem} href="/etusivu">Etusivu</a></ul>
+        <ul><a style={styles.listItem} href="/kayttoehdot">Käyttöehdot</a></ul>
+        <ul><a style={styles.listItem} href="/tietosuoja">Yksityisyys</a></ul>
+        <ul><a style={styles.listItem} href="/yhteydenotto">Ota yhteyttä</a></ul>
+        <ul style={{alignItems: 'flex-end'}}>
+            <a style={{ alignContent: 'flex-end' }} target='__blank' href="https://www.instagram.com/urieltekoaly">
+                <FaInstagram size={50} style={{ alignSelf: 'center', justifySelf: 'center' }} />
+            </a>
+        </ul>
+    </li>
+</header>
+
     ): (
         <header
           style={{

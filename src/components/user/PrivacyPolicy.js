@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 
 export function PrivacyPolicy(){
-    const [mobile, setMobile] = useState(window.innerWidth <= 500);
+    const [mobile, setMobile] = useState(window.innerWidth <= 800);
     const privacyPolicyText = `
     \nYksityisyytesi on meille äärimmäisen tärkeää.
 
@@ -69,7 +69,7 @@ export function PrivacyPolicy(){
     Jatkamalla Uriel Tekoäly Chat -sovelluksen käyttöä muutosten jälkeen hyväksyt tällaiset muutokset.
         `
     const handleWindowSizeChange = () => {
-        setMobile(window.innerWidth <= 500);
+        setMobile(window.innerWidth <= 800);
     }
     useEffect(() => {
         ReactGA.send({

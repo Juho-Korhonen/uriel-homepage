@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet-async'
 
 export function NoPage(){
-    const [mobile, setMobile] = useState(window.innerWidth <= 500);
+    const [mobile, setMobile] = useState(window.innerWidth <= 800);
 
     const handleWindowSizeChange = () => {
-        setMobile(window.innerWidth <= 500);
+        setMobile(window.innerWidth <= 800);
     }
 
     useEffect(() => {

@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 
 
 export function TermsOfService(){
-    const [mobile, setMobile] = useState(window.innerWidth <= 500);
+    const [mobile, setMobile] = useState(window.innerWidth <= 800);
     const TermsOfServiceText = `
     Käyttöehdot - Uriel Tekoäly Chat
     Viimeksi päivitetty: heinäkuu 2023
@@ -82,7 +82,7 @@ export function TermsOfService(){
     
     Nämä käyttöehdot ovat Suomen lakien alaisia ja tulkitaan niiden mukaisesti. Kaikki riidat ratkaistaan sovinnollisesti ennakko-oikeudenkäyntimenettelyssä. Jos osapuolet eivät ratkaise riitaa 60 kalenteripäivän kuluessa alkuperäisen vaatimuksen vastaanottamisesta, riita lähetetään toimivaltaiselle tuomioistuimelle Suomessa. Suostut luopumaan oikeudestasi ryhtyä ryhmäkanteeseen tai osallistua siihen. `
     const handleWindowSizeChange = () => {
-        setMobile(window.innerWidth <= 500);
+        setMobile(window.innerWidth <= 800);
     }
     useEffect(() => {
         ReactGA.send({
