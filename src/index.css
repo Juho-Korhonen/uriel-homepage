@@ -5,6 +5,17 @@ a {
   text-decoration: none;
 }
 
+.contactLinkA{
+  color: #3994FF
+}
+.contactLinkA:hover{
+  color: rgb(15, 80, 221)
+}
+
+.igLogoA:hover{
+  color: white
+}
+
 a:hover {
   color: #3994FF;
   text-decoration:none; 

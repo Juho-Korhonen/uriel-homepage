@@ -52,8 +52,8 @@ export default function NavBar(){
         <ul><a style={styles.listItem} href="/kayttoehdot">Käyttöehdot</a></ul>
         <ul><a style={styles.listItem} href="/tietosuoja">Yksityisyys</a></ul>
         <ul><a style={styles.listItem} href="/yhteydenotto">Ota yhteyttä</a></ul>
-        <ul style={{alignItems: 'flex-end'}}>
-            <a style={{ alignContent: 'flex-end' }} target='__blank' href="https://www.instagram.com/urieltekoaly">
+        <ul>
+            <a className='igLogoA' target='__blank' href="https://www.instagram.com/urieltekoaly">
                 <FaInstagram size={50} style={{ alignSelf: 'center', justifySelf: 'center' }} />
             </a>
         </ul>
