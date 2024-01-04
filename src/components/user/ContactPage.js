@@ -34,7 +34,7 @@ export function ContactPage(){
                 <main style={{flex:1, padding: 100, paddingTop:150, alignSelf: 'flex-start'}}>
                     <h1>Ota yhteyttä meihin</h1>
                     <p>Voit ottaa meihin vapaasti yhteyttä antaaksesi palautetta, raportoidaksesi bugeja, tai kysyäksesi muista Uriel Tekoäly Chattiin liittyvistä asioista.</p>
-                    <p>Email: <a class="contactLinkA" href="mailto:yhteydenotto@urielai.com">yhteydenotto@urielai.com</a></p>
+                    <p>Email: <a className="contactLinkA" href="mailto:yhteydenotto@urielai.com">yhteydenotto@urielai.com</a></p>
 
                 </main>
             </div>
@@ -55,7 +55,7 @@ export function ContactPage(){
                 <main style={{flex:1, padding: 50, alignSelf: 'flex-start', marginBottom: 200}}>
                     <h1>Ota yhteyttä meihin</h1>
                     <p>Voit ottaa meihin vapaasti yhteyttä antaaksesi palautetta, raportoidaksesi bugeja, tai kysyäksesi muista Uriel Tekoäly Chattiin liittyvistä asioista. Etsimme myös yhteistyökumppaneita, jos yhteistyö kiinnostaa, ota vapaasti yhteyttä!</p>
-                    <p>Email: <a class="contactLinkA" href="mailto:yhteydenotto@urielai.com">yhteydenotto@urielai.com</a></p>
+                    <p>Email: <a className="contactLinkA" href="mailto:yhteydenotto@urielai.com">yhteydenotto@urielai.com</a></p>
 
                 </main>
             </div>
